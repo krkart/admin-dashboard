@@ -1,7 +1,7 @@
 body,
 html {
   height: 100%;
-  margin: auto;
+  margin: 0;
 }
 
 .container {
@@ -13,10 +13,8 @@ html {
   'nav footer footer';
   grid-template-columns: 1fr 5fr 1.5fr;
   grid-template-rows: 1.5fr 3fr 3fr 0.25fr;
-  gap: 15px;
   text-align: center;
   height: 100%;
-  padding: 16px;
   box-sizing: border-box;
 }
 
@@ -25,8 +23,7 @@ html {
   font-size: 32px;
   font-family: Helvetica;
   font-weight: bold;
-  color: white;
-  border-radius: 15px;
+  color: #000;
 }
 
 header {
@@ -51,7 +48,7 @@ trend {
 
 main {
   grid-area: content;
-  background-color: #7E1DC3;
+  background-color: #fff;
 }
 
 footer {
@@ -62,6 +59,18 @@ footer {
 main p {
   font-size: 18px;
   font-family: sans-serif;
-  color: white;
+  color: #000;
   text-align: left;
+}
+
+.dash-item {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+  font-size: 1.4rem;
+  margin-bottom: 0.5em;
+}
+
+.dash-item > img {
+  height: 1em;
 }
