@@ -21,6 +21,7 @@ html {
   font-family: Helvetica;
   font-size: 1.6em;
   font-weight: bold;
+  letter-spacing: 0.05em;
 }
 
 header {
@@ -76,11 +77,6 @@ nav > * {
   height: 1em;
 }
 
-aside {
-  grid-area: ann;
-  background-color: #642cde;
-}
-
 trend {
   grid-area: trend;
   background-color: #f00f5a;
@@ -97,7 +93,7 @@ main {
   overflow: auto;
 }
 
-main > *:nth-child(1) {
+main > *:first-child {
   grid-column: 1 / 4;
 }
 
@@ -107,14 +103,47 @@ main > div {
   padding: 15px;
   box-shadow: 2px 3px 3px 3px lightgrey;
   background-color: #fff;
-  font-size: 0.8em;
+  font-size: 0.7em;
 }
 
 main > div > p {
-  font-size: 0.7em;
+  font-size: 0.8em;
   font-family: sans-serif;
   font-weight: 100;
   color: #000;
+  margin-top: -0.05em;
+}
+
+aside {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0.5em;
+  grid-area: ann;
+  background-color: #642cde;
+  text-align: left;
+  overflow: auto;
+  color: #fff;
+}
+
+aside > *:first-child {
+  grid-row: 1 / 4;
+}
+
+aside > div {
+  padding: 5px;
+  font-size: 0.6em;
+  border-bottom: 1px solid #fff;
+}
+
+aside > *:last-child {
+  border: none;
+}
+
+aside > div > p {
+  font-size: 0.8em;
+  font-family: sans-serif;
+  font-weight: 100;
+  margin-top: -1px;
 }
 
 
