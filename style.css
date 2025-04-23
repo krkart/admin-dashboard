@@ -17,7 +17,6 @@ html {
 }
 
 .container > * {
-  padding: 1em;
   font-family: Helvetica;
   font-size: 1.6em;
   font-weight: bold;
@@ -32,13 +31,10 @@ header {
   grid-area: header;
   background-color: #fff;
   color: #000;
-  border-bottom: 3px solid whitesmoke;
-  -webkit-box-shadow: 0 10px 10px -10px #000000;
-  -moz-box-shadow: 0 10px 10px -10px #000000;
-       box-shadow: 0 10px 10px -10px #000000;
+  box-shadow: 0 10px 10px -10px #000000;
   position: relative;
   z-index: 10;
-  height: 
+  padding: 0 1em 0 1em;
 }
 
 form {
@@ -51,18 +47,30 @@ form {
 
 form > input {
   padding: 10px;
-  border: 2px solid #1FD4BD;
+  border: 2px solid #00ADFE;
   border-radius: 25px;
-  width: 30vw;
+  width: 45vw;
   background-color: #e4f1ef;
 }
 
 form > img {
+  height: 1.2em;
+  cursor: pointer;
+}
+
+header > div.notification > img {
   height: 1.1em;
+  cursor: pointer;
+}
+
+.notification {
+  justify-self: end;
+  align-self: center;
+  padding-right: 1em;
 }
 
 header > div.user > img {
-  height: 1.5em;
+  height: 1.7em;
 }
 
 .user {
@@ -71,6 +79,7 @@ header > div.user > img {
   gap: 0.5em;
   align-items: center;
   justify-items: center;
+  cursor: pointer;
 }
 
 .greeting {
@@ -101,6 +110,30 @@ header > div.greeting > h4 {
   margin-top: -1em;
 }
 
+header > div.btn > * {
+  margin: 0 1em 0 1em;
+  padding: 0.5em;
+  border: 1px solid #078bdd;
+  border-radius: 25px;
+  box-shadow: 1px 1px 2px 1px black;
+  width: 7vw;
+  background-color: #078bdd;
+  color: #fff;
+  font-weight: bold;
+  font-size: medium;
+}
+
+header > div.btn > *:hover {
+  background-color: #056fb1;
+  cursor: pointer;
+}
+
+.btn {
+  grid-column: 2 / 4;
+  align-self: center;
+  justify-self: end;
+}
+
 /* Navigation */
 nav {
   grid-area: nav;
@@ -109,12 +142,14 @@ nav {
   box-shadow: 5px 0 5px -5px #014670;
   position: relative;
   z-index: 10;
+  padding: 1em;
 }
 
 nav > * {
   display: flex;
   flex-direction: row;
   gap: 0.5em;
+  cursor: pointer;
 }
 
 .logo {
@@ -143,7 +178,7 @@ nav > * {
 }
 
 .dash-item > img {
-  height: 1em;
+  height: 1.2em;
 }
 
 /* Your Projects Section */
@@ -155,6 +190,7 @@ main {
   grid-area: content;
   background-color: rgb(242, 247, 255);
   text-align: left;
+  padding: 1em;
   overflow: auto;
 }
 
@@ -179,6 +215,14 @@ main > div > p {
   margin-top: -0.05em;
 }
 
+main > div > span {
+  display: flex;
+  content: url(./icons/favorite.png);
+  height: 1.5em;
+  align-content: end;
+  justify-self: end;
+}
+
 /* Announcement Section */
 aside {
   display: grid;
@@ -189,6 +233,7 @@ aside {
   text-align: left;
   overflow: auto;
   color: palegoldenrod;
+  padding: 1em;
 }
 
 aside > *:first-child {
@@ -222,6 +267,7 @@ trend {
   grid-area: trend;
   background-color: palegoldenrod;
   color: #000;
+  padding: 1em;
 }
 
 trend > * {
@@ -232,6 +278,7 @@ trend > * {
 
 trend > div {
   font-size: 0.6em;
+  cursor: pointer;
 }
 
 trend > div > div {
