@@ -201,7 +201,7 @@ main > *:first-child {
 main > div {
   border-left: 8px solid goldenrod;
   border-radius: 8px;
-  padding: 15px;
+  padding: 1.2em;
   box-shadow: 2px 3px 3px 3px lightgrey;
   background-color: #fff;
   font-size: 0.7em;
@@ -213,11 +213,14 @@ main > div > p {
   font-weight: 100;
   color: #000;
   margin-top: -0.05em;
+  height: 10em;
+  overflow: hidden;
+  margin-bottom: 4em;
 }
 
 main > div > span {
   display: flex;
-  content: url(./icons/favorite.png);
+  content: url(./icons/bookmark.png);
   height: 1.5em;
   align-content: end;
   justify-self: end;
