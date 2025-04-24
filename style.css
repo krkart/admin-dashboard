@@ -218,26 +218,45 @@ main > div > p {
   margin-bottom: 4em;
 }
 
-main > div > span {
+main > div > input {
+  appearance: none;
   display: flex;
-  height: 1.5em;
+  height: 2.5em;
   align-content: end;
   justify-self: end;
   cursor: pointer; 
   float: right;
   margin-left: 1em;
+  padding: 0.2em;
 }
 
-main > div > span:nth-of-type(1) {
+main > div > input:hover {
+  background-color: lightgray;
+}
+
+main > div > input:nth-of-type(1) {
   content: url(./icons/share.png);
+  display: block;
 }
 
-main > div > span:nth-of-type(2) {
+main > div > input:nth-of-type(1):checked {
+  content: url(./icons/shared.png);
+}
+
+main > div > input:nth-of-type(2) {
   content: url(./icons/bookmark.png);
 }
 
-main > div > span:last-child {
+main > div > input:nth-of-type(2):checked {
+  content: url(./icons/bookmarked.png);
+}
+
+main > div > input:last-child {
   content: url(./icons/favorite.png);
+}
+
+main > div > input:last-child:checked {
+  content: url(./icons/favorited.png);
 }
 
 /* Announcement Section */
