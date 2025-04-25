@@ -10,8 +10,8 @@ html {
   'nav header header'
   'nav content ann'
   'nav content trend';
-  grid-template-columns: 0.8fr 5fr 1.5fr;
-  grid-template-rows: 1.5fr 3fr 3fr;
+  grid-template-columns: 1fr 6fr 2fr;
+  grid-template-rows: 1fr 2fr 2fr;
   height: 100%;
   box-sizing: border-box;
 }
@@ -87,7 +87,7 @@ header > div.user > img {
   grid-template-areas: 
     'img p'
     'img h4';
-  grid-template-rows: 1.5em 1.5em;
+  grid-template-rows: 2em 1em;
   grid-template-columns: 2em 20em;
   column-gap: 1em;
   align-items: center;
